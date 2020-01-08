@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<tr th:each="user,iterStat : ${list}">
+    <td th:text="${user.cid}"></td>
+    <td th:text="${user.canme}"></td>
+    <td th:text="${user.color}"></td>
+    <td th:text="${iterStat.index}">index</td> </tr>
+
+</body>
+</html>
