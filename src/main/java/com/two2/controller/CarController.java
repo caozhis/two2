@@ -39,6 +39,11 @@ public class CarController {
          return "edit";
     }
 
+    /**
+     * 删除
+     * @param cid
+     * @return
+     */
      @GetMapping("delete/{cid}")
     public String del(@PathVariable(name = "cid") int cid){
         cc.del(cid);
